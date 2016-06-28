@@ -1,15 +1,49 @@
-# Objects and Arrays 
 
-| Students will be able to... |
-| :--- |
-| Identify primitive and reference data types in JavaScript |
-| Manipulate data inside arrays and objects |
-| Use iteration methods to loop over objects and arrays |
+<!--
+Market: SF
+-->
 
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60"> Objects and Arrays
+
+
+## Why is this important?
+*This workshop is relevant to developers because:*
+
+- You will be able to identify the attributes and characteristics of objects.
+- Understanding primitive data types will enhance your coding decisions in terms of efficiency and code reuse  
+
+## What are the objectives?
+<!-- specific/measurable goal for students to achieve -->
+*After this workshop, developers will be able to:*
+
+- Identify primitive and reference data types in JavaScript
+- Manipulate data inside arrays and objects
+- Use iteration methods to loop over objects and arrays
+
+## Where should we be now?
+<!-- call out the skills that are prerequisites -->
+*Before this workshop, developers should already be able to:*
+
+- Identify an array of elements
+- Open, edit, and save a `.js` file in Atom
+- Evaluate simple lines of code in the Chrome Developer Console or Node REPL
+
+## How to use this document:
+<!-- call out the skills that are prerequisites -->
+*This is a reading assignment. Please accomplish the following:*
+
+- Read the entire document
+- Study the code samples
+- Evaluate the exercises, try implementing solutions, then check your code against the `solutions.md`
+
+
+---
 
 ## Primitive and Reference Data Types
 
 When your computer looks up the value of a variable, you can think of that like asking a librarian for some information.  
+
+![](http://i.giphy.com/vCxwRCxMaE4yk.gif)
 
 If the librarian knows the answer "off the top of their head," they'll give it to you immediately. Computer programming languages purposefully store some types of variables so that they'll immediately know what to give you when you access a variable. These are called the "primitive data types" of the language. 
 
@@ -129,9 +163,9 @@ One way to loop through objects in JavaScript is to use `for ... in` loops:
 
 ## Arrays
 
-Arrays are a special kind of _ordered_ object. Instead of having keys that are *strings*, every key is a number called an "index", starting with 0. 
+Arrays are a special kind of _ordered_ object. Instead of having keys that are *strings*, every key is a number called an "index", starting with 0. An array can contain lists of *numbers*, *strings*, *Objects*, or even other *arrays*!  When discussing arrays, we say that they are collections of *elements*.
 
-##Array Method Basics##
+##Array Access Methods##
 
 **Creating** an array:
 
@@ -156,6 +190,11 @@ Accessing the **last** element:
 ```js
 fruits[fruits.length-1]; // "Jackfruit
 ```
+  
+  
+##Adding Elements to an Array
+  
+  
 **Adding** an element to the **front**:
 
 ```js
@@ -168,6 +207,7 @@ fruits.unshift("Apricot"); // 11
 fruits.push("Kiwi"); // 12
 ``` 
 
+##Removing Elements from an Array
 **Removing** an element from the **front**:
 
 ```js
@@ -179,6 +219,8 @@ fruits.shift(); // "Apricot"
 ```js
 fruits.pop(); // "Kiwi"
 ``` 
+##Other Array Manipulation Methods
+
 **Finding** the index of an element:  
 
 ```js
@@ -215,7 +257,7 @@ var commonFruits = fruits.slice(0,4);
 
 ![img](http://www.frusion.com/media/1011/fruit-row.png)
 
-### Iteration Methods
+##Array Iteration Methods
 
 JavaScript has quite a few helper functions that implement common patterns.  "Iteration methods" follow the pattern of looping through an array and do something with each element.  Iteration methods take a function as one of their arguments. This "callback" function says what should be done with each element of the array.
 
